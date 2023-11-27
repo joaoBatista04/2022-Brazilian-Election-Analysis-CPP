@@ -3,24 +3,29 @@
 
 #include <iostream>
 #include <string>
-#include "./partido.hpp"
-#include "./date.hpp"
 #include "../enums/genero.hpp"
 
 using std::string;
 
+class Partido;
+class Date;
+
 class Candidato{
 
 private:
-    int qtd_votos;
     Genero cd_genero;
+
+    int qtd_votos;
     int nr_candidato;
     int posicao_geral;
     int posicao_eleito;
+
     bool cd_sit_tot_turno;
+
     string nm_urna_candidato;
     string nm_tipo_destino_votos;
-    Date dt_nascimento;
+    
+    Date *dt_nascimento;
     Partido* partido;
 
 public:

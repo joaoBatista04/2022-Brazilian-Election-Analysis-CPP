@@ -5,7 +5,8 @@ using namespace std;
 
 #include <iostream>
 #include <list>
-#include "./candidato.hpp"
+
+class Candidato;
 
 class Partido{
 

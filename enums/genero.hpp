@@ -1,1 +1,0 @@
-enum Genero{ Masculino, Feminino};

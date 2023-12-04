@@ -8,6 +8,7 @@
 #include "./candidato.hpp"
 #include "./partido.hpp"
 #include "./date.hpp"
+#include "./tipoEleicao.hpp"
 
 using std::string;
 
@@ -21,11 +22,11 @@ private:
     int votosLegenda;
     int votosNominais;
 
-    int tipo;
+    TipoEleicao tipo;
     Date dataEleicao;
 
 public:
-    Eleicao(int tipo, string data);
+    Eleicao(string tipo, string data);
 
     int getTipoEleicao() const;
     int getVotosLegenda() const;

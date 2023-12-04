@@ -5,16 +5,18 @@
 #include <string>
 #include "./partido.hpp"
 #include "./date.hpp"
+#include "./genero.hpp"
 
 using std::string;
 
 class Partido;
 class Date;
+class Genero;
 
 class Candidato{
 
 private:
-    int cd_genero;
+    Genero cd_genero;
 
     int qtd_votos;
     int nr_candidato;

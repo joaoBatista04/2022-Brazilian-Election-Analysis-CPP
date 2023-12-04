@@ -6,23 +6,8 @@
 #include "../include/date.hpp"
 #include "../include/fileInputException.hpp"
 
-using std::cout;
-
-int main(int argc, char const *argv[])
-{
-    int tipo;
-    string estadual = "--estadual";
-    string federal = "--federal";
-
-    if (argv[1] == estadual){
-        tipo = 7;
-    } else if (argv[1] == federal){
-        tipo = 6;
-    } else{
-        exit(1);
-    }
-
-    Eleicao eleicao = Eleicao(tipo, argv[4]);
+int main(int argc, char const *argv[]){
+    Eleicao eleicao = Eleicao(argv[1], argv[4]);
 
     inputServices::processamentoArquivoCandidatos(argv[2], eleicao);
 

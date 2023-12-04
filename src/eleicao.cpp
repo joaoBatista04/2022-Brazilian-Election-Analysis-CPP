@@ -3,15 +3,14 @@
 #include <algorithm>
 
 //CONSTRUTOR DA CLASSE
-Eleicao::Eleicao(int tipo, string data): dataEleicao(data){
-    this->tipo = tipo;
+Eleicao::Eleicao(string tipo, string data): dataEleicao(data), tipo(tipo){
     this->votosLegenda = 0;
     this->votosNominais = 0;
 }
 
 //GETTERS
 int Eleicao::getTipoEleicao() const{
-    return this->tipo;
+    return this->tipo.getTipoEleicaoFn();
 }
 
 int Eleicao::getVotosLegenda() const{

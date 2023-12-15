@@ -22,8 +22,8 @@ private:
     int votosLegenda;
     int votosNominais;
 
-    TipoEleicao tipo;
     Date dataEleicao;
+    TipoEleicao tipo;
 
 public:
     Eleicao(string tipo, string data);

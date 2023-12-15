@@ -16,20 +16,17 @@ class Genero;
 class Candidato{
 
 private:
-    Genero cd_genero;
-
-    int qtd_votos;
     int nr_candidato;
-    int posicao_geral;
-    int posicao_eleito;
-
-    bool cd_sit_tot_turno;
-
     string nm_urna_candidato;
     string nm_tipo_destino_votos;
-    
     Date dt_nascimento;
+    bool cd_sit_tot_turno;
+    Genero cd_genero;
     Partido* partido;
+
+    int qtd_votos;
+    int posicao_eleito;
+    int posicao_geral;
 
 public:
     Candidato(int nr_candidato, string nm_urna_candidato, string nm_tipo_destino_votos, Date &data_nascimento, bool cd_sit_total_turno, int genero, Partido* partido);

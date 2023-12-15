@@ -2,6 +2,7 @@
 #include <sstream>
 #include <fstream>
 #include <iostream>
+#include <cstdint>
 #include "../include/inputServices.hpp"
 #include "../include/partido.hpp"
 #include "../include/fileInputException.hpp"

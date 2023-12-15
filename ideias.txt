@@ -1,1 +1,0 @@
-Substituir o tipo de eleicao e o genero do candidato por uma enum, assim como feito em Java

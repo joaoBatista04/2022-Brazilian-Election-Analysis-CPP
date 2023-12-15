@@ -2,7 +2,7 @@ EXECUTABLE       = deputados
 SRC              = ./src
 INCLUDE          = ./include
 OBJ              = ./obj
-FLAGS            = -lm -pedantic -Wall -g
+FLAGS            = -lm -pedantic -g
 ADD_FLAGS        = -Wextra -O2
 COMPILER         = g++   
 COMPILER_VERSION = -std=c++17
